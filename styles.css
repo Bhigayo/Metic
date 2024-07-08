@@ -1,0 +1,549 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #333;
+}
+
+header {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+}
+
+/* Navbar styles */
+.navbar {
+    width: 100%;
+    max-width: 1200px;
+}
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.navbar-brand {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.brand-logo {
+    height: 110px; /* Adjust the height as needed */
+    width: auto; 
+}
+.navbar-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-menu li {
+    margin-left: 20px;
+    position: relative;
+}
+
+.navbar-menu a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+.navbar-icons {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-icons li {
+    margin-left: 20px;
+}
+
+.navbar-icons a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+.navbar-icons {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-icons li {
+    margin-left: 20px;
+}
+
+.navbar-icons a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+/* Navbar on hover - slight black opacity */
+.navbar:hover {
+    background: rgba(0, 0, 0, 0.7); /* Adjust opacity as needed */
+}
+
+/* Dropdown styles */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    color: #333;
+    min-width: 600px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 100%;
+    left: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.dropdown-content .dropdown-section {
+    flex: 1;
+    padding: 10px;
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 8px 0;
+    text-decoration: burlywood;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: flex;
+}
+
+
+.dropdown-menu.show {
+    display: block;
+}
+
+/* Hero section styles */
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+    margin-top: 80px; /* Adjust according to the height of your fixed header */
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.hero-text {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.hero-button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+}
+
+.hero-button:hover {
+    background-color: #555;
+}
+
+/* Cart styles */
+#cart-count {
+    color: #fff;
+}
+/* Slideshow styles */
+.slideshow-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* Hide overflow to ensure images don't extend beyond container */
+}
+
+.slide {
+    flex: 0 0 100%; /* Ensure each slide takes full width */
+    transition: transform 0.6s ease; /* Smooth transition for slide animation */
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure images cover the entire slide */
+}
+.currency-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.currency-dropdown .dropdown {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.currency-dropdown .dropdown a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.currency-dropdown:hover .dropdown {
+    display: block;
+}
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+}
+
+.product {
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #fff;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product h2 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.price {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #333;
+}
+
+.product button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.product button:hover {
+    background-color: #111;
+}
+footer {
+    background-color: #fff;
+    padding: 40px 0;
+    border-top: 1px solid #eaeaea;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.footer-section form {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-section form input,
+.footer-section form button {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    outline: none;
+}
+
+.footer-section form button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.footer-section form button:hover {
+    background-color: #333;
+}
+
+.footer-section p {
+    font-size: 12px;
+    color: #777;
+}
+
+.footer-section a {
+    color: #000;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #000;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.social-icons a {
+    display: block;
+    margin-top: 10px;
+}
+
+.social-icons img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #eaeaea;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 14px;
+    color: #777;
+}
+
+.footer-bottom img {
+    height: 40px;
+    margin-top: 10px;
+}
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cart-table th, .cart-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.cart-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.cart-table img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.quantity-control {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quantity-control button {
+    background-color: #ddd;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.quantity-control input {
+    width: 40px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.remove-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.cart-summary {
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    padding: 20px;
+}
+
+.cart-summary h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.summary-details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+#checkout-button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+}
+.cart-container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+.cart-items {
+    margin-bottom: 20px;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.cart-item img {
+    width: 50px;
+    height: 50px;
+}
+
+.cart-totals {
+    text-align: right;
+}
+.checkout-container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.checkout-form, .order-summary {
+    width: 48%;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="tel"],
+.form-group input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.order-summary {
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+.order-summary h2 {
+    margin-top: 0;
+}
+
+.order-items {
+    margin-bottom: 20px;
+}
+
+.order-totals p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #555;
+}

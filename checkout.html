@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Checkout</title>
+</head>
+<body>
+    <div class="checkout-container">
+        <h1>Checkout</h1>
+        <form class="checkout-form">
+            <div class="form-group">
+                <label for="first-name">First Name *</label>
+                <input type="text" id="first-name" name="first-name" required>
+            </div>
+            <div class="form-group">
+                <label for="last-name">Last Name *</label>
+                <input type="text" id="last-name" name="last-name" required>
+            </div>
+            <div class="form-group">
+                <label for="country">Country / Region *</label>
+                <input type="text" id="country" name="country" value="Nigeria" required>
+            </div>
+            <div class="form-group">
+                <label for="street-address">Street Address *</label>
+                <input type="text" id="street-address" name="street-address" required>
+            </div>
+            <div class="form-group">
+                <label for="town">Town / City *</label>
+                <input type="text" id="town" name="town" required>
+            </div>
+            <div class="form-group">
+                <label for="state">State *</label>
+                <input type="text" id="state" name="state" value="Lagos" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone *</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="create-account" name="create-account">
+                <label for="create-account">Create an account?</label>
+            </div>
+            <button type="submit">Place Order</button>
+        </form>
+        <div class="order-summary">
+            <h2>Order Summary</h2>
+            <div class="order-items"></div>
+            <div class="order-totals">
+                <p>Subtotal: <span id="order-subtotal">$0.00</span></p>
+                <p>Shipping: <span id="order-shipping">$100.00</span></p>
+                <p>Total: <span id="order-total">$100.00</span></p>
+            </div>
+        </div>
+    </div>
+    <script src="checkout.js"></script>
+</body>
+</html>

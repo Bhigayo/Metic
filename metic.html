@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metic Apparel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-container">
+                <a href="metic.html" class="navbar-brand">
+                    <img src="hg.png" alt="Brand Logo" class="brand-logo">
+                </a>
+                <ul class="navbar-menu">
+                    <li class="dropdown">
+                        <a href="#shop">Shop</a>
+                        <div class="dropdown-content">
+                            <div class="dropdown-section">
+                                <h4>ALL PRODUCTS</h4>
+                                <a href="#">New Arrivals</a>
+                                <a href="#">SS23 Collection</a>
+                                <a href="#">Winter Collection</a>
+                            </div>
+                            <div class="dropdown-section">
+                                <h4>MEN</h4>
+                                <a href="#">All</a>
+                                <a href="#">Tees</a>
+                                <a href="#">Hoodies</a>
+                                <a href="#">Vest</a>
+                                <a href="#">Shirt</a>
+                                <a href="#">Denim</a>
+                                <a href="#">Body Hug</a>
+                                <a href="#">Pants</a>
+                                <a href="#">Shorts</a>
+                            </div>
+                            <div class="dropdown-section">
+                                <h4>ACCESSORIES</h4>
+                                <a href="#">All</a>
+                                <a href="#">Bucket Hat</a>
+                                <a href="#">Drip Hat</a>
+                                <a href="#">Baseball Caps</a>
+                                <a href="#">Snapback</a>
+                                <a href="#">Bags</a>
+                            </div>
+                            <div class="dropdown-section">
+                                <h4>WOMEN</h4>
+                                <a href="#">All</a>
+                                <a href="#">Gown</a>
+                                <a href="#">Tops</a>
+                                <a href="#">Short</a>
+                                <a href="#">Skirt</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#store">Our Store</a></li>
+                </ul>
+                <ul class="navbar-icons">
+                    <ul class="navbar-icons">
+                        <li class="currency-dropdown">
+                            <a href="#">USD</a>
+                            <ul class="dropdown">
+                                <li><a href="#" data-currency="USD">USD</a></li>
+                                <li><a href="#" data-currency="GBP">GBP</a></li>
+                                <li><a href="#" data-currency="NGN">NGN</a></li>
+                            </ul>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Wishlist</a></li>
+                    <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="hero">
+            <div class="hero-text">
+                <a href="#new-collection" class="hero-button">Explore Our New Collection</a>
+            </div>
+        </section>
+        
+        <!-- Add your other sections here -->
+    </main>
+    <section class="hero">
+        <div class="slideshow-container">
+            <div class="slide">
+                <img src="hx4.jpg" alt="Slide 1" class="slide-image">
+            </div>
+            <div class="slide">
+                <img src="hx5.jpg" alt="Slide 2" class="slide-image">
+            </div>
+        </div>
+        <div class="hero-text">
+            <h1>Explore Our New Collection</h1>
+            <a href="#" class="hero-button">Shop Now</a>
+        </div>
+    </section>
+    
+<section class="products">
+    <div class="product" data-id="1" data-name="BOXY Tees" data-price-usd="20" data-price-gbp="£15" data-price-ngn="N8000">
+        <img src="BOXY TEE VTG.png" alt="Tank">
+        <h2>Tees</h2>
+        <p class="price" data-usd="20" data-gbp="£15" data-ngn="N8000">$20</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product" data-id="2" data-name="CREWNECK" data-price-usd="30" data-price-gbp="£15" data-price-ngn="N12000">
+        <img src="CREWNECK.png" alt="CREWNECK">
+        <h2>CREWNECK</h2>
+        <p class="price" data-usd="30" data-gbp="£25" data-ngn="N12000">$30</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product" data-id="3" data-name="Tees" data-price-usd="25" data-price-gbp="20" data-price-ngn="10000">
+        <img src="06.png" alt="Crop TANK">
+        <h2>Tees</h2>
+        <p class="price" data-usd="25" data-gbp="£20" data-ngn="N10000">$25</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product" data-id="4" data-name="MTC CROP TANK" data-price-usd="15" data-price-gbp="12" data-price-ngn="6000">
+        <img src="CROP TANK.png" alt="Metic Cap">
+        <h2>Crop TANK</h2>
+        <p class="price" data-usd="15" data-gbp="£12" data-ngn="N6000">$15</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product" data-id="5" data-name="M Tees" data-price-usd="15" data-price-gbp="£12" data-price-ngn="N6000">
+        <img src="retro.png" alt="Metic Cap">
+        <h2>Tees</h2>
+        <p class="price" data-usd="15" data-gbp="£12" data-ngn="N6000">$15</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product" data-id="6" data-name="Metic CT" data-price-usd="50" data-price-gbp="£40" data-price-ngn="N20000">
+        <img src="CROP TANK.png" alt="Crop Top">
+        <h2>Crop Tank</h2>
+        <p class="price" data-usd="50" data-gbp="£40" data-ngn="N20000">$10</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product" data-id="7" data-name="Puffer Jacket" data-price-usd="10" data-price-gbp="£8" data-price-ngn="N4000">
+        <img src="Puffer.png" alt="Crop Top">
+        <h2>Puffer Jacket</h2>
+        <p class="price" data-usd="10" data-gbp="£8" data-ngn="N4000">$50</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product" data-id="8" data-name="Metic Crop Top" data-price-usd="10" data-price-gbp="£8" data-price-ngn="N4000">
+        <img src="crop top.png" alt="Crop Top">
+        <h2>Crop Top</h2>
+        <p class="price" data-usd="10" data-gbp="£8" data-ngn="N4000">$10</p>
+        <button>Add to Cart</button>
+    </div>
+</section>
+    <script src="scripts.js"></script>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section newsletter">
+                <h3>GET 10% OFF YOUR NEXT ORDER</h3>
+                <form>
+                    <input type="text" placeholder="Name" name="name">
+                    <input type="email" placeholder="Email" name="email">
+                    <button type="submit">Subscribe to Our Newsletter</button>
+                </form>
+                <p>*By signing up, you agree to receive emails about HighFashion and our <a href="#">other terms</a>.</p>
+            </div>
+            <div class="footer-section shop-here">
+                <h3>SHOP HERE</h3>
+                <ul>
+                    <li><a href="#">All Items</a></li>
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Female</a></li>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">Collections</a></li>
+                </ul>
+            </div>
+            <div class="footer-section quick-links">
+                <h3>QUICK LINKS</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Our Walk-In Store</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Policies</a></li>
+                    <li><a href="#">Your Account</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h3>CONTACT</h3>
+                <p>Shop 38/39, Aaron's Lekki Mall, Admiralty Way, Lagos, Nigeria.</p>
+                <p>Operating Hours: Monday - Saturday (10AM -10PM)<br>Sunday (12PM-10PM)</p>
+                <p>+2349131058119</p>
+                <div class="social-icons">
+                    <a href="#"><img src="insta-logo.png" alt="Instagram">@metic_apparel</a>
+                    <a href="#"><img src="insta-logo.png" alt="Instagram">@metic_apparel</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 Metic Apparel. All rights reserved</p>
+            <img src="Head Garage.png" alt="Metic">
+        </div>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
